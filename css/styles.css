@@ -1,12 +1,37 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const canvas = document.getElementById('board');
+    const ctx = canvas.getContext('2d');
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+    const cellSize = 50;
+    const boardImage = new Image();
+    boardImage.src = 'images/image.png'; // Ruta a tu imagen de cuadrícula
 
-#app {
-    text-align: center;
-}
+    boardImage.onload = () => {
+        ctx.drawImage(boardImage, 0, 0, canvas.width, canvas.height);
+    };
+
+    const blocks = [
+        { shape: [[1, 1], [1, 1]], bonus: 'bonus1', imageSrc: 'images/block1.png' },
+        { shape: [[1, 1, 1], [0, 1, 0]], bonus: 'bonus2', imageSrc: 'images/block2.png' },
+        // Añadir más bloques según sea necesario
+    ];
+
+    blocks.forEach((block, index) => {
+        const blockImage = new Image();
+        blockImage.src = block.imageSrc;
+        blockImage.onload = () => {
+            const x = (index % (canvas.width / cellSize)) * cellSize;
+            const y = Math.floor(index / (canvas.width / cellSize)) * cellSize;
+            ctx.drawImage(blockImage, x, y, cellSize * block.shape[0].length, cellSize * block.shape.length);
+        };
+    });
+
+    document.getElementById('solve-button').addEventListener('click', () => {
+        solve();
+    });
+
+    function solve() {
+        // Implementa tu algoritmo de colocación de bloques aquí
+        alert('¡Función de solución aún no implementada!');
+    }
+});
