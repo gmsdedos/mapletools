@@ -14,3 +14,10 @@ body {
     border-radius: 5px;
 }
 
+.nav-link {
+    color: #e0e0e0 !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
