@@ -174,5 +174,181 @@
                 "Move to the Land of Beginnings, click on each lock and complete the content"
             ]
         }
+    ],
+    "es": [
+        {
+            "title": "Tierra de los Comienzos",
+            "steps": [
+                "Al obtener el control de tu personaje, ataca el arbusto hasta que reveles una puerta con muchos candados",
+                "Entrega la misión sobre tu cabeza para ser transportado a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de los Guerreros",
+            "steps": [
+                "Completa el minijuego luchando contra tres rondas de guerreros",
+                "Baja el sol",
+                "Acepta la misión de Beodog",
+                "Habla con otros tres guerreros, aceptando o entregando sus misiones",
+                "Ve dos mapas a la derecha y derrota al Balrog, recolectando la llave que deja caer",
+                "Acepta la misión sobre tu cabeza. NOTA: NO hagas clic en el texto, ya que serás transportado innecesariamente de vuelta a la Tierra de los Comienzos. Elige la segunda opción en su lugar, luego regresa al área principal",
+                "Acepta la misión de Arsan Lupen",
+                "Sube el sol",
+                "Elige la primera opción, 'Último Guerrero en Pie'",
+                "Completa el minijuego luchando contra tres rondas de guerreros",
+                "Entrega la misión sobre tu cabeza y serás transportado a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de las Riquezas",
+            "steps": [
+                "Acepta y entrega dos misiones de Joel [60 Cestas de Comida]",
+                "Acepta y entrega la misión de Mansa y serás transportado a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de la Contemplación",
+            "steps": [
+                "Ve tres mapas a la derecha y entrega la misión sobre tu cabeza, luego acepta otra misión sobre tu cabeza",
+                "Mata 50 cuervos",
+                "Entrega la misión sobre tu cabeza y serás transportado de vuelta al área principal",
+                "Acepta y entrega la misión de Adler para obtener tu primera llave.",
+                "Acepta otra misión de Adler",
+                "Habla con Ashkaya para moverte a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de la Inocencia",
+            "steps": [
+                "Acepta y entrega la misión de Tina [30 Golosinas Congeladas]",
+                "Acepta (pero NO entregues) otra misión de Tina [30 Juguetes de Niño]",
+                "Antes de entregar esta misión, ve al primer mapa con monstruos en esta área y acepta y entrega la misión del Árbol Roto, que te dará tu segunda llave",
+                "Entrega la misión de Tina a Riley, luego acepta otra misión de Riley",
+                "Acepta la misión de Billy",
+                "Ve al primer mapa de esta área y obtén canicas de colores de los monstruos hasta llegar al 100%, además de reunir al menos un Parche Mágico para el Ojo",
+                "Entrega la misión de Billy",
+                "Habla continuamente con el Niño Silencioso hasta que recibas una llave",
+                "Habla con Lonnie mientras tienes un Parche Mágico para el Ojo, procede a la escena, luego completa la misión de Lonnie para recibir una llave",
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de los Guerreros",
+            "steps": [
+                "Baja el sol",
+                "Acepta la misión sobre tu cabeza",
+                "Acepta una misión de Vulcanelli",
+                "Mata 50 Balrogs de Batalla y Hongos Merodeadores",
+                "Entrega la misión sobre tu cabeza y regresa al área principal",
+                "Sube el sol y completa la escena",
+                "Baja el sol",
+                "Entrega la misión sobre tu cabeza",
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de las Riquezas",
+            "steps": [
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de la Contemplación",
+            "steps": [
+                "Acepta una misión de Alma sin Nombre",
+                "Ve tres mapas a la derecha y mata al cuervo, luego recoge la llave que deja caer",
+                "Acepta la misión sobre tu cabeza para obtener una llave, luego regresa al área principal",
+                "Entrega la misión a Alma sin Nombre",
+                "Acepta una misión de Adler",
+                "Habla con Alma Insatisfecha, Alma sin Nombre y Alma Obliviosa respectivamente para donar tus colores",
+                "Entrega la misión a Adler",
+                "Párate al lado del hombre sentado en un banco y presiona la tecla NPC, acepta la misión y serás transportado a una nueva ubicación",
+                "Mata al Mago Amarillo, completa la escena y luego recibirás una llave y serás transportado de vuelta al área principal",
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de la Inocencia",
+            "steps": [
+                "Acepta una misión de Tina",
+                "Obtén un libro de cualquier monstruo en el área",
+                "Entrega la misión a Tina",
+                "Acepta la misión de Tina",
+                "Compra un Osito de Peluche Nuevo por 10,000 mesos",
+                "Entrega la misión a Tina",
+                "Acepta otra misión de Tina",
+                "Haz doble clic en el libro en tu inventario para recibir una llave",
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de los Guerreros",
+            "steps": [
+                "Sube el sol",
+                "Elige 'Último Guerrero en Pie'",
+                "Completa el minijuego luchando contra tres rondas de guerreros",
+                "Entrega la misión sobre tu cabeza",
+                "Entrega la misión a Beodog",
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de las Riquezas",
+            "steps": [
+                "Entra en el portal a la izquierda y acepta una misión del Viejo Fabricante de Lápidas",
+                "Ataca la roca a la derecha hasta que caiga una piedra, luego lleva la piedra al Viejo Fabricante de Lápidas. Observa la hora en que completas este paso, ya que solo puedes entregar esta misión después de 10 minutos",
+                "Regresa al área principal, luego acepta ambas misiones de Joel. Una misión, 'Un Sabor Delicioso,' es una misión repetible que te da un importante artículo llamado Pieza de Oro Deliciosa. La otra misión te pide reunir [10 Cestas de Comida]. Una vez que las reúnas, entrega la misión y acepta otra misión que te pide eliminar 100 Ladrones del Tesoro Monstruosos. Completa ambas misiones, luego acepta otra misión de Joel",
+                "Mueve el cofre de Joel afuera, luego entrega la misión a Joel",
+                "Continúa completando la misión repetible de Joel 'Un Sabor Delicioso' hasta que tengas un total de 6 Piezas de Oro Deliciosas. Esta misión te pide reunir [20 Cestas de Comida] o eliminar 50 Ladrones del Tesoro Monstruosos, así que es recomendable reunir Cestas de Comida extra en el segundo mapa de esta área mientras matas Ladrones del Tesoro Monstruosos en este mapa también",
+                "Acepta una misión de Ben y elige la última opción",
+                "Acepta una misión de Mansa",
+                "Haz clic en la bolsa de monedas en la esquina superior derecha para aceptar una misión",
+                "Habla con Horemheb",
+                "Acepta la misión sobre tu cabeza",
+                "Entrega la misión a Louie el Promedio",
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de la Contemplación",
+            "steps": [
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de la Inocencia",
+            "steps": [
+                "Haz clic en el cuenco de dulces frente a Tina para hacer que llueva (NO aceptes ni entregues ninguna misión en esta área)",
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de los Guerreros",
+            "steps": [
+                "Haz clic en la estatua a la derecha para aceptar una nueva misión",
+                "Entrega la misión a Edgar Tetch",
+                "Haz clic en la estatua nuevamente para aceptar otra misión",
+                "Consume tres Piezas de Oro Deliciosas, luego habla con Vulcanelli para obtener una llave",
+                "Muévete a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de las Riquezas",
+            "steps": [
+                "Habla con Horemheb para obtener una llave",
+                "Deberían haber pasado 10 minutos, así que entra en el portal a la izquierda y acepta la misión del Viejo Fabricante de Lápidas y recibe una nueva llave NOTA: NO hagas clic en el texto aquí. Se te presentarán tres opciones para cambiar el color de tu lápida cuando mueras. Este es un cambio permanente, así que ten cuidado con la opción que elijas. Si haces clic en el texto, elegirás la lápida dorada",
+                "Sal del mapa y vuelve a entrar; el Viejo Fabricante de Lápidas se habrá movido a la derecha, así que acepta su nueva misión",
+                "Muévete a la derecha y ataca las cinco lápidas para que caigan al área de abajo, luego muévete a la izquierda y habla con el Viejo Fabricante de Lápidas",
+                "Entrega la misión al Viejo Fabricante de Lápidas para recibir una llave",
+                "Sal al área principal, consume las últimas tres piezas de oro mientras estás fuera de las murallas, luego ataca la muralla hasta que ocurra una escena",
+                "Entrega la misión a Mansa",
+                "Entrega y acepta una nueva misión de Ben",
+                "Mueve a Ben y su cofre afuera",
+                "Muévete a la siguiente área cuatro veces, recorriendo todas las tierras hasta que vuelvas a llegar a la Tierra de las Riquezas",
+                "Acepta una misión de Mansa",
+                "Entrega la misión a la Pila de Tesoros de Mansa para obtener tu última llave!",
+                "Muévete a la Tierra de los Comienzos, haz clic en cada candado y completa el contenido"
+            ]
+        }
     ]
 }
