@@ -22,30 +22,156 @@
                 "Complete the minigame by fighting three rounds of warriors",
                 "Turn in the quest above your head and you will be transported to the next area"
             ]
-        }
-    ],
-    "es": [
+        },
         {
-            "title": "Tierra de los Comienzos",
+            "title": "Land of Riches",
             "steps": [
-                "Al tomar el control de tu personaje, ataca el arbusto hasta que reveles una puerta con muchos candados",
-                "Entrega la misión sobre tu cabeza para ser transportado a la siguiente área"
+                "Accept and turn in two quests from Joel [60 Food Baskets]",
+                "Accept and turn in quest from Mansa and you will be transported to the next area"
             ]
         },
         {
-            "title": "Tierra de los Guerreros",
+            "title": "Land of Contemplation",
             "steps": [
-                "Completa el minijuego luchando tres rondas de guerreros",
-                "Baja el sol",
-                "Acepta la misión de Beodog",
-                "Habla con tres guerreros más, aceptando o entregando sus misiones",
-                "Ve dos mapas a la derecha y derrota al Balrog, recolectando la llave que deja caer",
-                "Acepta la misión sobre tu cabeza. NOTA: No pases el texto, ya que serás transportado innecesariamente de vuelta a la Tierra de los Comienzos. Elige la segunda opción y luego regresa al área principal",
-                "Acepta la misión de Arsan Lupen",
-                "Sube el sol",
-                "Elige la primera opción, 'Último Guerrero en Pie'",
-                "Completa el minijuego luchando tres rondas de guerreros",
-                "Entrega la misión sobre tu cabeza y serás transportado a la siguiente área"
+                "Go three maps to the right and turn in the quest over your head, then accept another quest over your head",
+                "Kill 50 ravens",
+                "Turn in the quest over your head and you will be transported back to the main area",
+                "Accept and turn in the quest from Adler to obtain your first key.",
+                "Accept another quest from Adler",
+                "Speak with Ashkaya to move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Innocence",
+            "steps": [
+                "Accept and turn in quest from Tina [30 Frozen Treat]",
+                "Accept (but do NOT turn in) another quest from Tina [30 Child's Toy]",
+                "Before turning in this quest, go to first map with mobs in this area and accept and turn in the quest from the Broken Tree, which will give you your second key",
+                "Turn in Tina's quest to Riley, then accept another quest from Riley",
+                "Accept Billy's quest",
+                "Go to the first map of this area and obtain colored marbles from mobs until you reach 100%, as well as gathering at least one Magic Eyepatch",
+                "Turn in Billy's quest",
+                "Continuously speak to the Silent Boy until you receive a key",
+                "Speak with Lonnie while you have a Magic Eyepatch, proceed to the cutscene, then complete Lonnie's quest to receive a key",
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Warriors",
+            "steps": [
+                "Lower the sun",
+                "Accept the quest over your head",
+                "Accept a quest from Vulcanelli",
+                "Kill 50 Battle Balrogs and Marauder Mushrooms",
+                "Turn in the quest above your head and return to main area",
+                "Raise the sun and complete the cutscene",
+                "Lower the sun",
+                "Turn in the quest over your head",
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Riches",
+            "steps": [
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Contemplation",
+            "steps": [
+                "Accept a quest from Nameless Soul",
+                "Move three maps to the right and kill the raven, then pick up the key it drops",
+                "Accept quest over your head to obtain a key, then return to the main area",
+                "Turn in the quest to Nameless Soul",
+                "Accept a quest from Adler",
+                "Speak to Unfulfilled Soul, Nameless Soul and Oblivious Soul respectively to donate your colors",
+                "Turn in the quest to Adler",
+                "Stand beside the man sitting on a bench and press the NPC key, accept the quest and you'll be transported to a new location",
+                "Kill the Yellow Mage, complete the cutscene and then you'll receive a key and be transported back to the main area",
+                "Move to next area"
+            ]
+        },
+        {
+            "title": "Land of Innocence",
+            "steps": [
+                "Accept a quest from Tina",
+                "Obtain a book from any mob in the area",
+                "Turn in quest to Tina",
+                "Accept quest from Tina",
+                "Purchase a Brand New Teddy Bear for 10,000 mesos",
+                "Turn in quest to Tina",
+                "Accept another quest from Tina",
+                "Double click the book in your inventory to receive a key",
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Warriors",
+            "steps": [
+                "Raise the sun",
+                "Choose 'Last Warrior Standing'",
+                "Complete minigame by fighting three rounds of warriors",
+                "Turn in the quest above your head",
+                "Turn in quest to Beodog",
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Riches",
+            "steps": [
+                "Enter the portal on the far left and accept a quest from Old Tombstone Maker",
+                "Attack the rock on the far right until a stone drops, then take the stone to the Old Tombstone Maker. Notice the time you complete this step, as you can only turn in this quest after 10 minutes",
+                "Return to the main area, then accept both quests from Joel. One quest, 'A Tasteful Flavor,' is a repeatable quest that gives you an important item called Delicious Gold Piece. The other quest asks you to gather [10 Food Baskets]. Once you gather these, turn the quest in and accept another quest that tasks you with eliminating 100 Treasure Thief Moustrocity. Complete both of these quests, then accept another quest from Joel",
+                "Move Joel's chest outside, then turn in the quest to Joel",
+                "Continue completing Joel's repeatable quest 'A Tasteful Flavor' until you have a total of 6 Delicious Gold Pieces. This quest asks you to either gather [20 Food Baskets] or eliminate 50 Treasure Thief Moustrocity, so it is wise to gather extra Food Baskets in the second map of this area while killing Treasure Thief Moustrocity in this map as well",
+                "Accept a quest from Ben and choose the last option",
+                "Accept a quest from Mansa",
+                "Click on the bag of coins in the top right corner to accept a quest",
+                "Talk to Horemheb",
+                "Accept quest over your head",
+                "Turn in the quest to Louie the Average",
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Contemplation",
+            "steps": [
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Innocence",
+            "steps": [
+                "Click on the bowl of sweets in front of Tina to make it rain (do NOT accept or turn in any quests in this area)",
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Warriors",
+            "steps": [
+                "Click on the statue on the far right to accept a new quest",
+                "Turn in the quest to Edgar Tetch",
+                "Click on the statue again to accept another quest",
+                "Consume three Delicious Gold Pieces, then speak to Vulcanelli to obtain a key",
+                "Move to the next area"
+            ]
+        },
+        {
+            "title": "Land of Riches",
+            "steps": [
+                "Speak to Horemheb to obtain a key",
+                "10 minutes should have passed by now, so enter the portal to the far left and accept the quest from Old Tombstone Maker and receive a new key NOTE: Do NOT click through the text here. You will be presented with three options to change the color of your tombstone when you die. This is a permanent change, so be careful which option you choose. If you click through the text, you will choose the gold tombstone",
+                "Leave the map and re-enter; the Old Tombstone Maker will have moved to the far right, so accept his new quest",
+                "Move right and attack all five tombstones to make them fall to the area below, then move left and speak to Old Tombstone Maker",
+                "Turn in the quest to Old Tombstone Maker to receive a key",
+                "Exit to the main area, consume the last three gold pieces while outside of the walls, then attack the wall until a cutscene occurs",
+                "Turn in the quest to Mansa",
+                "Turn in and accept a new quest from Ben",
+                "Move Ben and his chest outside",
+                "Move to the next area four times, cycling through all of the lands until you arrive back in the Land of Riches",
+                "Accept a quest from Mansa",
+                "Turn in the quest to Mansa's Pile o' Treasure Puke to obtain your last key!",
+                "Move to the Land of Beginnings, click on each lock and complete the content"
             ]
         }
     ]
