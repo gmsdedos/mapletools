@@ -1,1 +1,53 @@
+{
+    "en": [
+        {
+            "title": "Land of Beginnings",
+            "steps": [
+                "Upon gaining control of your character, attack the brush until you reveal a door with many locks",
+                "Turn in the quest above your head to be transported to the next area"
+            ]
+        },
+        {
+            "title": "Land of Warriors",
+            "steps": [
+                "Complete the minigame by fighting three rounds of warriors",
+                "Lower the sun",
+                "Accept the quest from Beodog",
+                "Speak to three other warriors, accepting or turning in their quests",
+                "Go two maps to the right and defeat the Balrog, collecting the key that it drops",
+                "Accept the quest over your head. NOTE: Do NOT click through the text, as you will be unnecessarily transported back to the Land of Beginnings. Choose the second option instead, then move back to the main area",
+                "Accept the quest from Arsan Lupen",
+                "Raise the sun",
+                "Choose the first option, 'Last Warrior Standing'",
+                "Complete the minigame by fighting three rounds of warriors",
+                "Turn in the quest above your head and you will be transported to the next area"
+            ]
+        }
+    ],
+    "es": [
+        {
+            "title": "Tierra de los Comienzos",
+            "steps": [
+                "Al tomar el control de tu personaje, ataca el arbusto hasta que reveles una puerta con muchos candados",
+                "Entrega la misión sobre tu cabeza para ser transportado a la siguiente área"
+            ]
+        },
+        {
+            "title": "Tierra de los Guerreros",
+            "steps": [
+                "Completa el minijuego luchando tres rondas de guerreros",
+                "Baja el sol",
+                "Acepta la misión de Beodog",
+                "Habla con tres guerreros más, aceptando o entregando sus misiones",
+                "Ve dos mapas a la derecha y derrota al Balrog, recolectando la llave que deja caer",
+                "Acepta la misión sobre tu cabeza. NOTA: No pases el texto, ya que serás transportado innecesariamente de vuelta a la Tierra de los Comienzos. Elige la segunda opción y luego regresa al área principal",
+                "Acepta la misión de Arsan Lupen",
+                "Sube el sol",
+                "Elige la primera opción, 'Último Guerrero en Pie'",
+                "Completa el minijuego luchando tres rondas de guerreros",
+                "Entrega la misión sobre tu cabeza y serás transportado a la siguiente área"
+            ]
+        }
+    ]
+}
 
