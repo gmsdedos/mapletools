@@ -21,3 +21,28 @@ body {
 .nav-link:hover {
     color: #ffffff !important;
 }
+
+.guide-section {
+    margin-bottom: 20px;
+}
+
+.step {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #8b0000;
+    display: flex;
+    align-items: center;
+}
+
+.step-text {
+    margin-left: 10px;
+}
+
+.step-checkbox {
+    transform: scale(1.5);
+}
+
+.language-switcher {
+    margin-top: 20px;
+}
