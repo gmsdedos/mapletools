@@ -1,1 +1,16 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.navbar, .section {
+    background-color: #1e1e1e;
+    border: none;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
 
