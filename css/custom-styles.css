@@ -1,34 +1,48 @@
-/* styles/custom-styles.css */
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+.navbar, .section {
+    background-color: #1e1e1e;
+    border: none;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-main {
+.section {
     padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-section {
+.nav-link {
+    color: #e0e0e0 !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.guide-section {
     margin-bottom: 20px;
 }
 
-/* Estilos para los checkboxes y otros elementos específicos */
+.step {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #8b0000;
+    display: flex;
+    align-items: center;
+}
+
+.step-text {
+    margin-left: 10px;
+}
+
+.step-checkbox {
+    transform: scale(1.5);
+}
+
+.language-switcher {
+    margin-top: 20px;
+}
