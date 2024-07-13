@@ -128,3 +128,66 @@ $(document).ready(function() {
         }
     }
 });
+
+
+
+$(document).ready(function() {
+    var guideContainer = $('#guide-container');
+    var resetCheckboxesBtn = $('#reset-checkboxes');
+
+    // Función para cargar la guía desde guide.js
+    function loadGuide() {
+        // Aquí se cargaría dinámicamente el contenido de guide.js
+        // Supongamos que guide.js contiene un objeto o datos estructurados
+        var guideData = {
+            sections: [
+                { title: "Land of Beginnings", steps: ["Step 1", "Step 2", "Step 3"] },
+                { title: "Land of Warriors", steps: ["Step 1", "Step 2", "Step 3"] },
+                { title: "Land of Riches", steps: ["Step 1", "Step 2", "Step 3"] },
+                // Agrega más secciones según sea necesario
+            ]
+        };
+
+        // Generar el HTML para mostrar la guía
+        var guideHTML = '';
+        guideData.sections.forEach(function(section, index) {
+            guideHTML += '<div class="guide-section">';
+            guideHTML += '<button class="btn btn-link btn-toggle" data-toggle-index="' + index + '">' + section.title + '</button>';
+            guideHTML += '<div class="collapse" id="collapse-' + index + '">';
+            guideHTML += '<ul>';
+            section.steps.forEach(function(step) {
+                guideHTML += '<li>' + step + '</li>';
+            });
+            guideHTML += '</ul>';
+            guideHTML += '</div>'; // Cierre de collapse
+            guideHTML += '</div>'; // Cierre de guide-section
+        });
+
+        guideContainer.html(guideHTML);
+
+        // Agregar funcionalidad de colapso
+        $('.btn-toggle').click(function() {
+            var toggleIndex = $(this).data('toggle-index');
+            $('#collapse-' + toggleIndex).collapse('toggle');
+        });
+    }
+
+    // Cargar la guía al cargar la página
+    loadGuide();
+
+    // Evento para resetear checkboxes
+    resetCheckboxesBtn.click(function() {
+        // Aquí deberías implementar la lógica para resetear los checkboxes
+        // Por ejemplo, desmarcar todos los checkboxes en la guía
+        $('.guide-section input[type="checkbox"]').prop('checked', false);
+    });
+
+    // Eventos para cambiar el idioma (a implementar según tus necesidades)
+    $('#switch-to-en').click(function() {
+        // Implementa el cambio a inglés si es necesario
+    });
+
+    $('#switch-to-es').click(function() {
+        // Implementa el cambio a español si es necesario
+    });
+});
