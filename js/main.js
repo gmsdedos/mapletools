@@ -1,41 +1,55 @@
-// scripts/main.js
-
 $(document).ready(function() {
-    // Array de objetos que define las secciones y sus enlaces
-    var sections = [
-        { name: "Afterlands", url: "sections/afterlands.html" },
-        // Agrega más secciones según sea necesario
-    ];
-
-    var menu = $('#menu');
-    var mainContent = $('#main-content');
-
-    // Función para cargar una sección específica
-    function loadSection(sectionUrl) {
-        $.ajax({
-            url: sectionUrl,
-            method: 'GET',
-            success: function(data) {
-                mainContent.html(data);
-            },
-            error: function() {
-                mainContent.html('<p>Error al cargar la sección.</p>');
-            }
-        });
-    }
-
-    // Generar dinámicamente los enlaces del menú
-    sections.forEach(function(section) {
-        var listItem = $('<li><a href="#">' + section.name + '</a></li>');
-        listItem.find('a').click(function(e) {
-            e.preventDefault();
-            loadSection(section.url);
-        });
-        menu.append(listItem);
+    // Cargar contenido de las secciones
+    $('#content').load('sections/afterlands.html', function(response, status, xhr) {
+        if (status == "error") {
+            $('#content').append(`<p>Error al cargar la sección: ${xhr.status} ${xhr.statusText}</p>`);
+        } else {
+            loadGuide('en');
+        }
     });
 
-    // Cargar la primera sección por defecto al cargar la página
-    if (sections.length > 0) {
-        loadSection(sections[0].url);
+    // Smooth scroll para la navegación
+    $('.nav-link').click(function(event) {
+        event.preventDefault();
+        const target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 500);
+    });
+
+    // Función para cargar la guía
+    function loadGuide(lang) {
+        $.getJSON('data/guide.json', function(data) {
+            let guideContent = '';
+            data[lang].forEach(section => {
+                guideContent += `<div class="guide-section">
+                    <h3>${section.title}</h3>`;
+                section.steps.forEach(step => {
+                    guideContent += `<div class="step">
+                        <input type="checkbox" class="step-checkbox">
+                        <span class="step-text">${step}</span>
+                    </div>`;
+                });
+                guideContent += `</div>`;
+            });
+            $('#guide-container').html(guideContent);
+
+            $('.step-checkbox').change(function() {
+                if (this.checked) {
+                    $(this).closest('.step').css('background-color', '#006400');
+                } else {
+                    $(this).closest('.step').css('background-color', '#8b0000');
+                }
+            });
+        });
     }
+
+    // Cambiar de idioma
+    $('#switch-to-en').click(function() {
+        loadGuide('en');
+    });
+
+    $('#switch-to-es').click(function() {
+        loadGuide('es');
+    });
 });
