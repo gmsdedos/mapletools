@@ -1,130 +1,41 @@
-$(document).ready(function() {
-    // Cargar contenido de las secciones
-    $('#content').load('sections/afterlands.html', function(response, status, xhr) {
-        if (status == "error") {
-            $('#content').append(`<p>Error al cargar la sección: ${xhr.status} ${xhr.statusText}</p>`);
-        } else {
-            loadGuide('en');
-        }
-    });
-
-    // Smooth scroll para la navegación
-    $('.nav-link').click(function(event) {
-        event.preventDefault();
-        const target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 500);
-    });
-
-    // Función para cargar la guía
-    function loadGuide(lang) {
-        $.getJSON('data/guide.json', function(data) {
-            let guideContent = '';
-            data[lang].forEach(section => {
-                guideContent += `<div class="guide-section">
-                    <h3>${section.title}</h3>`;
-                section.steps.forEach(step => {
-                    guideContent += `<div class="step">
-                        <input type="checkbox" class="step-checkbox">
-                        <span class="step-text">${step}</span>
-                    </div>`;
-                });
-                guideContent += `</div>`;
-            });
-            $('#guide-container').html(guideContent);
-
-            // Aplicar color de fondo a los pasos según el estado del checkbox
-            $('.step-checkbox').change(function() {
-                if (this.checked) {
-                    $(this).closest('.step').css('background-color', '#006400');
-                } else {
-                    $(this).closest('.step').css('background-color', '#8b0000');
-                }
-            });
-
-            // Inicializar color de fondo de los pasos
-            $('.step').css('background-color', '#8b0000');
-        }).fail(function() {
-            console.log('Error al cargar el archivo JSON.');
-        });
-    }
-
-    // Cambiar de idioma
-    $('#content').on('click', '#switch-to-en', function() {
-        loadGuide('en');
-    });
-
-    $('#content').on('click', '#switch-to-es', function() {
-        loadGuide('es');
-    });
-});
-
+// scripts/main.js
 
 $(document).ready(function() {
-    // Función para cargar el estado de los checkboxes desde localStorage al cargar la página
-    function loadCheckboxState() {
-        // Cargar el estado para la guía en inglés
-        $('#guideEnglish .guide-step').each(function() {
-            var checkboxId = $(this).find('input[type="checkbox"]').attr('id');
-            var isChecked = localStorage.getItem(checkboxId) === 'true';
-            $(this).find('input[type="checkbox"]').prop('checked', isChecked);
-            updateDivBackground($(this).find('input[type="checkbox"]'));
-        });
+    // Array de objetos que define las secciones y sus enlaces
+    var sections = [
+        { name: "Afterlands", url: "sections/afterlands.html" },
+        // Agrega más secciones según sea necesario
+    ];
 
-        // Cargar el estado para la guía en español
-        $('#guideSpanish .guide-step').each(function() {
-            var checkboxId = $(this).find('input[type="checkbox"]').attr('id');
-            var isChecked = localStorage.getItem(checkboxId) === 'true';
-            $(this).find('input[type="checkbox"]').prop('checked', isChecked);
-            updateDivBackground($(this).find('input[type="checkbox"]'));
+    var menu = $('#menu');
+    var mainContent = $('#main-content');
+
+    // Función para cargar una sección específica
+    function loadSection(sectionUrl) {
+        $.ajax({
+            url: sectionUrl,
+            method: 'GET',
+            success: function(data) {
+                mainContent.html(data);
+            },
+            error: function() {
+                mainContent.html('<p>Error al cargar la sección.</p>');
+            }
         });
     }
 
-    // Al cargar la página, cargar el estado de los checkboxes desde localStorage
-    loadCheckboxState();
-
-    // Al hacer clic en un paso de la guía en inglés
-    $('#guideEnglish .guide-step').click(function() {
-        var checkbox = $(this).find('input[type="checkbox"]');
-        checkbox.prop('checked', !checkbox.prop('checked'));
-        updateDivBackground(checkbox);
-        saveCheckboxState(checkbox);
-    });
-
-    // Al hacer clic en un paso de la guía en español
-    $('#guideSpanish .guide-step').click(function() {
-        var checkbox = $(this).find('input[type="checkbox"]');
-        checkbox.prop('checked', !checkbox.prop('checked'));
-        updateDivBackground(checkbox);
-        saveCheckboxState(checkbox);
-    });
-
-    // Función para guardar el estado del checkbox en localStorage
-    function saveCheckboxState(checkbox) {
-        var checkboxId = checkbox.attr('id');
-        var isChecked = checkbox.prop('checked');
-        localStorage.setItem(checkboxId, isChecked);
-    }
-
-    // Al hacer clic en el botón de resetear
-    $('#reset-checkboxes').click(function() {
-        // Resetear todos los checkboxes
-        $('input[type="checkbox"]').each(function() {
-            $(this).prop('checked', false);
-            updateDivBackground($(this));
-            var checkboxId = $(this).attr('id');
-            localStorage.setItem(checkboxId, false);
+    // Generar dinámicamente los enlaces del menú
+    sections.forEach(function(section) {
+        var listItem = $('<li><a href="#">' + section.name + '</a></li>');
+        listItem.find('a').click(function(e) {
+            e.preventDefault();
+            loadSection(section.url);
         });
+        menu.append(listItem);
     });
 
-    // Función para actualizar el fondo del div basado en el estado del checkbox
-    function updateDivBackground(checkbox) {
-        var div = checkbox.parent();
-        if (checkbox.prop('checked')) {
-            div.removeClass('unchecked').addClass('checked');
-        } else {
-            div.removeClass('checked').addClass('unchecked');
-        }
+    // Cargar la primera sección por defecto al cargar la página
+    if (sections.length > 0) {
+        loadSection(sections[0].url);
     }
 });
