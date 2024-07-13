@@ -34,6 +34,7 @@ $(document).ready(function() {
             });
             $('#guide-container').html(guideContent);
 
+            // Aplicar color de fondo a los pasos según el estado del checkbox
             $('.step-checkbox').change(function() {
                 if (this.checked) {
                     $(this).closest('.step').css('background-color', '#006400');
@@ -41,15 +42,20 @@ $(document).ready(function() {
                     $(this).closest('.step').css('background-color', '#8b0000');
                 }
             });
+
+            // Inicializar color de fondo de los pasos
+            $('.step').css('background-color', '#8b0000');
+        }).fail(function() {
+            console.log('Error al cargar el archivo JSON.');
         });
     }
 
     // Cambiar de idioma
-    $('#switch-to-en').click(function() {
+    $('#content').on('click', '#switch-to-en', function() {
         loadGuide('en');
     });
 
-    $('#switch-to-es').click(function() {
+    $('#content').on('click', '#switch-to-es', function() {
         loadGuide('es');
     });
 });
