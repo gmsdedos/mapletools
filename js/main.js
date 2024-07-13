@@ -59,3 +59,72 @@ $(document).ready(function() {
         loadGuide('es');
     });
 });
+
+
+$(document).ready(function() {
+    // Función para cargar el estado de los checkboxes desde localStorage al cargar la página
+    function loadCheckboxState() {
+        // Cargar el estado para la guía en inglés
+        $('#guideEnglish .guide-step').each(function() {
+            var checkboxId = $(this).find('input[type="checkbox"]').attr('id');
+            var isChecked = localStorage.getItem(checkboxId) === 'true';
+            $(this).find('input[type="checkbox"]').prop('checked', isChecked);
+            updateDivBackground($(this).find('input[type="checkbox"]'));
+        });
+
+        // Cargar el estado para la guía en español
+        $('#guideSpanish .guide-step').each(function() {
+            var checkboxId = $(this).find('input[type="checkbox"]').attr('id');
+            var isChecked = localStorage.getItem(checkboxId) === 'true';
+            $(this).find('input[type="checkbox"]').prop('checked', isChecked);
+            updateDivBackground($(this).find('input[type="checkbox"]'));
+        });
+    }
+
+    // Al cargar la página, cargar el estado de los checkboxes desde localStorage
+    loadCheckboxState();
+
+    // Al hacer clic en un paso de la guía en inglés
+    $('#guideEnglish .guide-step').click(function() {
+        var checkbox = $(this).find('input[type="checkbox"]');
+        checkbox.prop('checked', !checkbox.prop('checked'));
+        updateDivBackground(checkbox);
+        saveCheckboxState(checkbox);
+    });
+
+    // Al hacer clic en un paso de la guía en español
+    $('#guideSpanish .guide-step').click(function() {
+        var checkbox = $(this).find('input[type="checkbox"]');
+        checkbox.prop('checked', !checkbox.prop('checked'));
+        updateDivBackground(checkbox);
+        saveCheckboxState(checkbox);
+    });
+
+    // Función para guardar el estado del checkbox en localStorage
+    function saveCheckboxState(checkbox) {
+        var checkboxId = checkbox.attr('id');
+        var isChecked = checkbox.prop('checked');
+        localStorage.setItem(checkboxId, isChecked);
+    }
+
+    // Al hacer clic en el botón de resetear
+    $('#reset-checkboxes').click(function() {
+        // Resetear todos los checkboxes
+        $('input[type="checkbox"]').each(function() {
+            $(this).prop('checked', false);
+            updateDivBackground($(this));
+            var checkboxId = $(this).attr('id');
+            localStorage.setItem(checkboxId, false);
+        });
+    });
+
+    // Función para actualizar el fondo del div basado en el estado del checkbox
+    function updateDivBackground(checkbox) {
+        var div = checkbox.parent();
+        if (checkbox.prop('checked')) {
+            div.css('background-color', '#4CAF50'); // Verde oscuro si está checkeado
+        } else {
+            div.css('background-color', '#E57373'); // Rojo oscuro si no está checkeado
+        }
+    }
+});
