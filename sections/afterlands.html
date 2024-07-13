@@ -3,73 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MapleStory Guide - Afterlands</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Custom CSS for dark mode -->
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .guide-category {
-            margin-bottom: 20px;
-        }
-        .guide-step {
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .guide-step input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        .guide-step.checked {
-            background-color: #4CAF50; /* Verde oscuro */
-        }
-        .guide-step.unchecked {
-            background-color: #E57373; /* Rojo oscuro */
-        }
-    </style>
+    <title>Afterlands Guide</title>
+    <link rel="stylesheet" href="../styles/custom-styles.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1>Guía Afterlands</h1>
-        
-        <!-- Categoría 1: Land of Beginnings -->
-        <div class="guide-category">
-            <h3>Land of Beginnings</h3>
-            <div class="guide-step">
-                <input type="checkbox" id="beginnings-1">
-                <label for="beginnings-1">Upon gaining control of your character, attack the brush until you reveal a door with many locks</label>
-            </div>
-            <div class="guide-step">
-                <input type="checkbox" id="beginnings-2">
-                <label for="beginnings-2">Turn in the quest above your head to be transported to the next area</label>
-            </div>
-            <!-- Agrega más pasos aquí -->
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Categoría 2: Land of Warriors -->
-        <div class="guide-category">
-            <h3>Land of Warriors</h3>
-            <div class="guide-step">
-                <input type="checkbox" id="warriors-1">
-                <label for="warriors-1">Complete the minigame by fighting three rounds of warriors</label>
-            </div>
-            <div class="guide-step">
-                <input type="checkbox" id="warriors-2">
-                <label for="warriors-2">Lower the sun</label>
-            </div>
-            <!-- Agrega más pasos aquí -->
-        </div>
+    <main>
+        <section id="afterlands">
+            <h1>Afterlands Guide</h1>
 
-        <!-- Agrega más categorías según sea necesario -->
+            <div class="guide-section">
+                <h2>Land of Beginnings</h2>
+                <div class="step">
+                    <input type="checkbox" id="step1">
+                    <label for="step1">Upon gaining control of your character, attack the brush until you reveal a door with many locks</label>
+                </div>
+                <!-- Añadir más pasos aquí -->
+            </div>
 
-        <!-- Bootstrap JS y jQuery (necesario para funcionamiento) -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-x8VOi1zBzztf3mL0vpKAQz6+n5PWO3Z+S4DcfoUowBjI7sS1d+Dm9bgtJc5vZo0z" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+TpC3fFihnY4P+9GnHvGz4uq1C4s7a4F9F5" crossorigin="anonymous"></script>
-    </div>
+            <!-- Añadir más secciones según sea necesario -->
+
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>
