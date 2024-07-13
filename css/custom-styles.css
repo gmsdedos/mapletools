@@ -1,48 +1,75 @@
+/* styles/custom-styles.css */
+
+/* Estilos generales */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar, .section {
-    background-color: #1e1e1e;
-    border: none;
+header {
+    background-color: #333;
+    padding: 10px 0;
 }
 
-.section {
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+main {
     padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
 }
 
-.nav-link {
-    color: #e0e0e0 !important;
+h1, h2, h3 {
+    color: #00bcd4;
 }
 
-.nav-link:hover {
-    color: #ffffff !important;
-}
-
+/* Estilos específicos para la guía */
 .guide-section {
     margin-bottom: 20px;
 }
 
 .step {
+    margin-bottom: 10px;
+}
+
+.step input[type="checkbox"] {
+    display: none; /* Ocultar el checkbox estándar */
+}
+
+.step label {
+    display: block;
     padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    background-color: #8b0000;
-    display: flex;
-    align-items: center;
+    background-color: #333;
+    cursor: pointer;
 }
 
-.step-text {
-    margin-left: 10px;
+.step label.checked {
+    background-color: #4CAF50; /* Color verde oscuro para pasos completados */
 }
 
-.step-checkbox {
-    transform: scale(1.5);
+.step label:not(.checked) {
+    background-color: #E57373; /* Color rojo oscuro para pasos pendientes */
 }
 
-.language-switcher {
-    margin-top: 20px;
-}
